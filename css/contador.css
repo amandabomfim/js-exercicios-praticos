@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    background: url('/imagens/contador.jpg') no-repeat center/cover;
+}
+
+
+header {
+    text-align: center;
+    
+}
+
+header h2 {
+    margin: 20px;
+}
+
+header p {
+    margin: 20px;
+}
+
+
+section div {
+    display: flex;
+}
+
+section div p {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.botoes {
+    text-align: center;
+}
+
+
+p > .botao {
+    height: 22px ;
+}
+
+
+p > .botao:active {
+    transform: scale(0.9);
+}
+
+p> .botao:hover {
+    background-color: green;
+    transform: translateY(-3px);
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de números</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/contador.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass">
+            <div class="animacao-fadeIn">
+                <header>
+                        <h1>&#x1F522; Contador de números</h1>
+                        <p>Digite o número inicial, o número final e o passo. O contador mostrará a sequência pulando de acordo com o passo escolhido.</p>
+                    </header>
+                    <section>
+                        <div>
+                            <p>
+                                <label for="formInicio">Inicio: </label>
+                                <input type="number" name="inicio" id="formInicio">
+                            </p>
+                            <p>
+                                <label for="formFim">Fim: </label>
+                                <input type="number" name="fim" id="formFim">
+                            </p>
+                            <p>
+                                <label for="formPasso">Passo: </label>
+                                <input type="number" name="passo" id="formPasso">
+                            </p>
+                            <p>
+                                <input class="botao" type="button" value="Enviar" onclick="contar()">
+                            </p>
+                        </div>
+                    </section>
+                    <div>
+                        <p id="resultado"><i></i></p>
+                    </div>
+                    <div class="botoes">
+                        <a href="/pages/home.html"><input class="botao" type="button" value="Voltar"></a>
+                        <input class="botao" type="button"  id="limpar" value="Limpar">
+                    </div>
+                
+                </div>
+            </div>
+            <footer>
+                <p>&#x1F680; Explorando o universo do código</p> 
+                <p>&copy; <span id="ano"></span> Amanda Bomfim</p>
+            </footer>
+            
+        
+    </div>
+        <script src="/js/contador.js"></script>
+</body>
+</html>

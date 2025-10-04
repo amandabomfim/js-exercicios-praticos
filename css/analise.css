@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+     background: url('/imagens/analisador.jpg') no-repeat center/cover;
+}
+
+header {
+    margin: 10px;
+}
+
+header h1,p {
+    margin-bottom: 10px;
+}
+
+section {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#seletor {
+    margin: 20px 20px;
+    width: 160px;
+    text-align: center;
+}
+
+#resultado {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+}
+
+.form1 > button:active {
+    transform: scale(0.9);
+}
+
+.form1 > button:hover {
+    background-color: green;
+    transform: translateY(-3px);
+}
+
+
+

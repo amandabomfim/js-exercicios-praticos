@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabuada</title>
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/tabuada.css">
+    </head>
+    <body>
+        <div>
+            <div class="glass">
+                <header>
+                    <h1>&#x2716;&#xFE0F; Tabuada Interativa</h1>
+                    <p>Digite um número no campo abaixo e clique em <strong>Gerar Tabuada</strong>. O programa vai mostrar a tabuada completa desse número, do 1 até o 10.</p>
+                </header>
+                <section>
+                    <label for="formNumero">Número: </label>
+                    <input type="number" name="numero" id="formNumero">
+                    <input id="gerarTabuada" class="botao" type="button" value="Gerar Tabuada" onclick="verTabuada()">
+                    <div>
+                        <p id="numTabuada">Preencha para ver o resultado</p>
+                        <select name="resultado" id="resultado" size="11">
+                
+                        </select>
+                    </div>
+                    <div class="botoes">
+                         <a href="/pages/home.html"><input class="botao" type="button" value="Voltar"></a>
+                        <input class="botao" type="button"  id="limpar" value="Limpar" onclick="limpar()">
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>&#x1F680; Explorando o universo do código</p> 
+                <p>&copy; <span id="ano"></span> Amanda Bomfim</p>
+            </footer>
+        </div>
+        <script src="/js/tabuada.js"></script>
+    </body>
+</html>

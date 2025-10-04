@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-padrao: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.glass {
+  width: 800px;
+  margin: auto;  
+  background: rgba(0,0,0,0.2); 
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  padding: 20px;
+  box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.614);
+}
+
+.animacao-fadeIn {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+    text-align: center;   
+}
+
+.botao {
+    width: 100px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    border-radius: 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.botoes > .botao {
+    margin: 10px;
+}
+
+.botoes input:active {
+    transform: scale(0.9);
+}
+
+.botoes input:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.botoes button:active {
+    transform: scale(0.9);
+}
+
+.botoes button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas médias - tablets */
+@media (max-width: 1024px) {
+  .glass {
+    width: 90%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Telas pequenas - celulares */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .glass {
+    width: 100%;
+    min-width: 280px;
+    margin: 80px auto 40px auto;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  section div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section div p {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .botao {
+    width: 70%;
+    height: 36px;
+    margin-top: 10px;
+  }
+
+
+
+  .botoes .botao {
+    flex: 1 1 150px; 
+    max-width: 200px;
+    min-width: 120px;
+    height: 35px;
+  }
+
+  footer {
+    position: static;
+    margin-top: 30px;
+    font-size: 0.8rem;
+  }
+}

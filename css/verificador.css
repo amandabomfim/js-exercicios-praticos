@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body {
+    background: url('/imagens/verificador.jpg') no-repeat center/cover;
+    color: black;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header > h1 {
+    margin-bottom: 10px;
+}
+
+section {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.614);
+    text-align: center;
+    padding: 10px;
+}
+
+input,label {
+    margin-bottom: 20px;
+}
+
+.botao {
+    color: black;
+}
+
+.form > button:active {
+    transform: scale(0.9);
+}
+
+.form > button:hover {
+    background-color: green;
+    color: white;
+    transform: translateY(-3px);
+}
+
+#resultado {
+    margin: 15px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+

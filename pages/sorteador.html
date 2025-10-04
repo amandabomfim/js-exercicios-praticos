@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de números</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/sorteador.css">
+</head>
+<body>
+    <div id="container">
+        <div class="glass">
+            <header>
+                <h1>&#x1F3B2; Sorteador de números</h1>
+                <p>Escolha a quantidade de números e o intervalo desejado. O programa sorteia os números automaticamente!</p>
+            
+            </header>
+
+            <section>
+                    <div id="form">
+                        <div class="campos">
+                            <label for="qntd-num">Sortear: </label>
+                            <input type="number" name="qntd-num" id="qntd-num">
+                            <label for="qntd-num">número(s) </label> <br>
+                        </div>
+
+                        <div class="campos">
+                            <label for="num1">De:</label>
+                            <input type="number" name="num1" id="num1">
+                        </div>
+                        
+                        <div class="campos">
+                            <label for="num2">Até:</label>
+                            <input type="number" name="num2" id="num2"><br>
+                        </div>
+
+                        <div class="botoes">
+                            <button id="sortear" class="botao" onclick="sortear()">Sortear</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p id="resultado"><i>Preencha para ver o resultado! ...</i></p>  
+                    </div>
+                    <div class="botoes">
+                        <a href="/pages/home.html"><input class="botao" type="button" value="Voltar"></a>
+                         <input class="botao" type="button"  id="limpar" value="Limpar" onclick="limpar()">
+                    </div>
+                </section>
+        </div>
+        <footer>
+            <p>&#x1F680; Explorando o universo do código</p> 
+            <p>&copy; <span id="ano"></span> Amanda Bomfim</p>
+        </footer>
+        <script src="/js/sorteador.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+
+header > h2 {
+    text-align: center;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section button {
+    width: 200px;
+    height: 40px;
+    margin: 10px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+section button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}

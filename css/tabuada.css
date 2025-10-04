@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background: url('/imagens/tabuada.jpg') no-repeat center/cover;
+    color: black;
+}
+
+header {
+    margin: 10px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+#numTabuada {
+    margin: 10px;
+}
+
+#resultado {
+    width: 130px;
+    text-align: center;
+}
+
+.botao {
+    color: black;
+}
+
+#gerarTabuada:active {
+    transform: scale(0.9);
+}
+
+#gerarTabuada:hover {
+    background-color: green;
+    color: white;
+    transform: translateY(-3px);
+}
+

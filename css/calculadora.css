@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background: url('/imagens/calculadora.jpg') no-repeat center/cover;
+}
+
+header > h1,p {
+    margin-bottom: 15px;
+}
+
+section {
+    text-align: center;
+}
+
+.form {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section > div > label,input {
+    margin: 8px 3px 8px 5px;
+}
+
+#btnEnviar {
+    margin: 20px 0px;
+}
+
+#btnEnviar:hover {
+    background-color: green;
+}
