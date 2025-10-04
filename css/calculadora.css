@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background: url('../imagens/calculadora.jpg') no-repeat center/cover;
+    background: url('/imagens/calculadora.jpg') no-repeat center/cover;
 }
 
 header > h1,p {
