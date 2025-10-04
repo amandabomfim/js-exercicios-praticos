@@ -7,13 +7,13 @@ function carregar () {
 
     if(horario>=0 && horario<=12){
         textoHora.innerHTML = `Bom dia! Agora são ${horario} horas e ${minutos} minutos. \u{1F31E}`
-        imgFundo.style.background = "url('./imagens/manha.jpg')"; 
+        imgFundo.style.background = "url('../imagens/manha.jpg')"; 
     }else if(horario<=17) {
         textoHora.innerHTML = `Boa tarde! Agora são ${horario} horas e ${minutos} minutos. \u{1F307} `
-        imgFundo.style.background = "url('./imagens/tarde.jpg')"; 
+        imgFundo.style.background = "url('../imagens/tarde.jpg')"; 
     }else {
         textoHora.innerHTML = `Boa noite! Agora são ${horario} horas e ${minutos} minutos. \u{1F319}`
-        imgFundo.style.background = "url('./imagens/noite.jpg')"; 
+        imgFundo.style.background = "url('../imagens/noite.jpg')"; 
         
     }
 
