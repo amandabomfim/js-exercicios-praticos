@@ -20,7 +20,7 @@ function carregar () {
     textoHora.style.textAlign = 'center'
     imgFundo.style.backgroundSize = "cover";
     imgFundo.style.backgroundPosition = "center"; 
-    img.style.backgroundRepeat = "no-repeat";
+    imgFundo.style.backgroundRepeat = "no-repeat";
     
 }
 
